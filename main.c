@@ -24,6 +24,12 @@ int main(void)
             // (anno%4 == 0) check per controllare se l'anno è bisestile
             else if (giorno > 29 && anno%4 == 0)
             {
+                if(anno%100 == 0 && anno%400 == 0){
+                    printf("La data digitata è sbagliata\n");
+                }
+                else{
+                    printf("La data digitata è corretta\n");
+                }
                 printf("La data digitata è sbagliata\n");
             }
             else
